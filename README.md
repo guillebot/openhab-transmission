@@ -30,7 +30,7 @@ In my home network I have transmission bittorrent client running on 192.168.1.5,
 
 You can just call this from wget/curl. But without a correct session-id you are going to get something like this:
 
-`
+```
  curl http://192.168.1.5:9091/transmission/rpc
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -42,7 +42,7 @@ You can just call this from wget/curl. But without a correct session-id you are 
 </p><p>This requirement has been added to help prevent 
 <a href="https://en.wikipedia.org/wiki/Cross-site_request_forgery">CSRF</a> attacks.</p>
 <p><code>X-Transmission-Session-Id: EStz3BzxejO4fdjh5768h6ic4xMkVPiHxHFVnu9X6IGuS1</code></p>
-`
+```
 
 
 

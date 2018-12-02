@@ -30,11 +30,12 @@ In my home network I have transmission bittorrent client running on 192.168.1.5,
 
 You can just call this from wget/curl. But without a correct session-id you are going to get something like this:
 
-```
+`
  curl http://192.168.1.5:9091/transmission/rpc
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   581  100   581    0     0    581      0  0:00:01 --:--:--  0:00:01 36312<h1>409: Conflict</h1><p>Your request had an invalid session-id header.</p><p>To fix this, follow these steps:<ol><li> When reading a response, get its X-Transmission-Session-Id header and remember it<li> Add the updated header to your outgoing requests<li> When you get this 409 error message, resend your request with the updated header</ol></p><p>This requirement has been added to help prevent <a href="https://en.wikipedia.org/wiki/Cross-site_request_forgery">CSRF</a> attacks.</p><p><code>X-Transmission-Session-Id: EStz3BzxejO4fdjh5768h6ic4xMkVPiHxHFVnu9X6IGuS1</code></p>
-```
+`
+
 
 

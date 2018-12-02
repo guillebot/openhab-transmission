@@ -41,7 +41,7 @@ Dload  Upload   Total   Spent    Left  Speed
 <li> When you get this 409 error message, resend your request with the updated header</ol>
 </p><p>This requirement has been added to help prevent 
 <a href="https://en.wikipedia.org/wiki/Cross-site_request_forgery">CSRF</a> attacks.</p>
-<p><code>X-Transmission-Session-Id: EStz3BzxejO4fdjh5768h6ic4xMkVPiHxHFVnu9X6IGuS1</code></p>
+<p><code>**X-Transmission-Session-Id: EStz3BzxejO4fdjh5768h6ic4xMkVPiHxHFVnu9X6IGuS1**</code></p>
 ```
 
 

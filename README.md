@@ -60,6 +60,12 @@ And now the output it's going to be something like:
 
 `{"arguments":{"activeTorrentCount":33,"cumulative-stats":{"downloadedBytes":10625376110802,"filesAdded":347932,"secondsActive":46245454,"sessionCount":74,"uploadedBytes":174935895262},"current-stats":{"downloadedBytes":140120127445,"filesAdded":3242,"secondsActive":1554679,"sessionCount":1,"uploadedBytes":4726821645},"downloadSpeed":1094983,"pausedTorrentCount":0,"torrentCount":33,"uploadSpeed":5000},"result":"success"}`
 
+As you can see, now we have the most relevant stats regarding transmission.
+
+In what follows, I'm going to try to get some of the values into OpenHAB.
+
+
+
 
 
 NEXT: escribir un python que reciba comandos básicos de lo que quiero hacer, hable con transmission pidiendo el x-session si fuere necesario y devuelva tal cual los resultados. Luego parsear los resultados con jsonpath en openhab. Para los comandos simplemente llamar al script (vale la pena recibir feedback?). Estudiar si vale la pena gateway rpc-mqtt. Ese gateway podría tener la lógica de conexión, reconexión y cada n minutos pedir info y mandar via mqtt a openhab. En openhab me quedaría todo igual a sucks u otras cosas mqtt. en contra, otro gateway corriendo 7x24...

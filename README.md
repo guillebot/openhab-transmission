@@ -52,6 +52,9 @@ of course yours it's going to be different.
 
 Now if we just add that on the curl command we have:
 
+`$ curl -H "X-Transmission-Session-Id: jEMRgfgqYQUtjfgfg1CzdjgeKuL2WowVS7bOmzxQew57kG" -d @session-stats.json http://192.168.1.5:9091/transmission/rpc`
+
+Where X-Transmission-Session-Id is what you obtained previously and session-stats.json is an example request (see json-commands in this repo)
 
 
 NEXT: escribir un python que reciba comandos básicos de lo que quiero hacer, hable con transmission pidiendo el x-session si fuere necesario y devuelva tal cual los resultados. Luego parsear los resultados con jsonpath en openhab. Para los comandos simplemente llamar al script (vale la pena recibir feedback?). Estudiar si vale la pena gateway rpc-mqtt. Ese gateway podría tener la lógica de conexión, reconexión y cada n minutos pedir info y mandar via mqtt a openhab. En openhab me quedaría todo igual a sucks u otras cosas mqtt. en contra, otro gateway corriendo 7x24...

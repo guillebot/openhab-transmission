@@ -54,7 +54,15 @@ Now if we just add that on the curl command we have:
 
 `$ curl -H "X-Transmission-Session-Id: jEMRgfgqYQUtjfgfg1CzdjgeKuL2WowVS7bOmzxQew57kG" -d @session-stats.json http://192.168.1.5:9091/transmission/rpc`
 
-Where X-Transmission-Session-Id is what you obtained previously and session-stats.json is an example request (see json-commands in this repo)
+Where **X-Transmission-Session-Id** is what you obtained previously and [session-stats.json](https://github.com/guillebot/openhab-transmission/blob/master/json-commands/session-stats.json) is an example request.
+
+And now the output it's going to be somethink like:
+
+{"arguments":{"activeTorrentCount":33,"cumulative-stats":{"downloadedBytes":10625376110802,"filesAdded":347932,"secondsActive":46245454,"sessionCount":74,"uploadedBytes":174935895262},"current-stats":{"downloadedBytes":140120127445,"filesAdded":3242,"secondsActive":1554679,"sessionCount":1,"uploadedBytes":4726821645},"downloadSpeed":1094983,"pausedTorrentCount":0,"torrentCount":33,"uploadSpeed":5000},"result":"success"}
+
+
+
+
 
 
 NEXT: escribir un python que reciba comandos básicos de lo que quiero hacer, hable con transmission pidiendo el x-session si fuere necesario y devuelva tal cual los resultados. Luego parsear los resultados con jsonpath en openhab. Para los comandos simplemente llamar al script (vale la pena recibir feedback?). Estudiar si vale la pena gateway rpc-mqtt. Ese gateway podría tener la lógica de conexión, reconexión y cada n minutos pedir info y mandar via mqtt a openhab. En openhab me quedaría todo igual a sucks u otras cosas mqtt. en contra, otro gateway corriendo 7x24...

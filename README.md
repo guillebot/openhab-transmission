@@ -56,12 +56,9 @@ Now if we just add that on the curl command we have:
 
 Where **X-Transmission-Session-Id** is what you obtained previously and [session-stats.json](https://github.com/guillebot/openhab-transmission/blob/master/json-commands/session-stats.json) is an example request.
 
-And now the output it's going to be somethink like:
+And now the output it's going to be something like:
 
-{"arguments":{"activeTorrentCount":33,"cumulative-stats":{"downloadedBytes":10625376110802,"filesAdded":347932,"secondsActive":46245454,"sessionCount":74,"uploadedBytes":174935895262},"current-stats":{"downloadedBytes":140120127445,"filesAdded":3242,"secondsActive":1554679,"sessionCount":1,"uploadedBytes":4726821645},"downloadSpeed":1094983,"pausedTorrentCount":0,"torrentCount":33,"uploadSpeed":5000},"result":"success"}
-
-
-
+`{"arguments":{"activeTorrentCount":33,"cumulative-stats":{"downloadedBytes":10625376110802,"filesAdded":347932,"secondsActive":46245454,"sessionCount":74,"uploadedBytes":174935895262},"current-stats":{"downloadedBytes":140120127445,"filesAdded":3242,"secondsActive":1554679,"sessionCount":1,"uploadedBytes":4726821645},"downloadSpeed":1094983,"pausedTorrentCount":0,"torrentCount":33,"uploadSpeed":5000},"result":"success"}`
 
 
 

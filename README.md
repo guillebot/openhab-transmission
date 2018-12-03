@@ -41,8 +41,22 @@ Dload  Upload   Total   Spent    Left  Speed
 <li> When you get this 409 error message, resend your request with the updated header</ol>
 </p><p>This requirement has been added to help prevent 
 <a href="https://en.wikipedia.org/wiki/Cross-site_request_forgery">CSRF</a> attacks.</p>
-<p><code>`**`X-Transmission-Session-Id: EStz3BzxejO4fdjh5768h6ic4xMkVPiHxHFVnu9X6IGuS1`**`</code></p>
+<p><code>X-Transmission-Session-Id: EStz3BzxejO4fdjh5768h6ic4xMkVPiHxHFVnu9X6IGuS1</code></p>
 ```
+
+So if you look there is the session-id we need:
+
+**X-Transmission-Session-Id: EStz3BzxejO4fdjh5768h6ic4xMkVPiHxHFVnu9X6IGuS1**
+
+of course yours it's going to be different.
+
+Now if we just add that on the curl command we have:
+
+
+
+NEXT: escribir un python que reciba comandos básicos de lo que quiero hacer, hable con transmission pidiendo el x-session si fuere necesario y devuelva tal cual los resultados. Luego parsear los resultados con jsonpath en openhab. Para los comandos simplemente llamar al script (vale la pena recibir feedback?). Estudiar si vale la pena gateway rpc-mqtt. Ese gateway podría tener la lógica de conexión, reconexión y cada n minutos pedir info y mandar via mqtt a openhab. En openhab me quedaría todo igual a sucks u otras cosas mqtt. en contra, otro gateway corriendo 7x24...
+
+
 
 
 
